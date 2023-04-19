@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>School</title>
   <link rel="stylesheet" href="./index-mobile.css">
+  <link rel="stylesheet" media="(min-width: 900px)" href="./index-desktop.css">
+  <link rel="stylesheet" media="(min-width: 1200px)" href="./index-desktopFHD.css" >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,8 +23,8 @@
     </div>
     <nav class="nav-bar inactive">
       <ul>
-        <li><a href="#">Staff</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="./staff.html">Staff</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
         <li><a href="#">Enrollment</a></li>
       </ul>
     </nav>
@@ -33,46 +35,58 @@
     </section>
     <div class="sections-main">
       <section class="main-sections about">
-        <p>about</p>
+        <div class="color-over"><p>Click to learn More</p></div>
+        <p class="mains-text">about</p>
       </section>
       <section class="main-sections mission">
-        <p>Our mission</p>
+        <div class="color-over"><p>Click to learn More</p></div>
+        <p class="mains-text">Our mission</p>
       </section>
       <section class="main-sections vision">
-        <p>our Vision</p>
+        <div class="color-over"><p>Click to learn More</p></div>
+        <p class="mains-text">our Vision</p>
       </section>
     </div>
     <section class="news">
       <div class="news-title">
         <p>Our <b>News</b></p>
       </div>
-      <div class="news-article">
-        <img src="./assets/bake-charity.jpg" alt="Baking Charity">
-        <p>Kids at Digital Insitute Raise Funds to teach other kids to Code</p> 
-        <hr>
-        <p>April 1st, 2023</p>
-      </div>
-      <div class="news-article">
-        <img src="./assets/kids-and-charity.jpg" alt="">
-        <p>Lemonade Stand set to teach kids about internet and lemonade</p>
-        <hr>
-        <p>April 10th, 2023</p>
-      </div>
+      <div class="news-articles">
+        <div class="news-article">
+          <img src="./assets/bake-charity.jpg" alt="Baking Charity">
+          <p>Kids at Digital Insitute Raise Funds to teach other kids to Code</p> 
+          <hr>
+          <p>April 1st, 2023</p>
+        </div>
+        <div class="news-article kids-lemonade">
+          <img src="./assets/kids-and-charity.jpg" alt="">
+          <p>Lemonade Stand set to teach kids about internet and lemonade</p>
+          <hr>
+          <p>April 10th, 2023</p>
+        </div>
+    </div>
     </section>
   </main>
   <footer>
-    <div class="footer-logo">
-      <img src="./assets/school-logo.png" alt="">
+    <div class="footer-info">
+      <div class="footer-logo">
+        <img src="./assets/school-logo.png" alt="">
+      </div>
+      <div class="contact-info">
+        <p>Work Hours:</p>
+        <p>Monday through Friday from 8am to 3pm Cst</p>
+      </div>
+      <div class="social-media">
+        <a href="#"><img class="social-icons" src="./assets/facebook-color-svgrepo-com.svg" alt=""></a>
+        <a href="#"><img class="social-icons" src="./assets/instagram-1-svgrepo-com.svg" alt=""></a>
+        <a href="#"><img class="social-icons" src="./assets/whatsapp-svgrepo-com.svg" alt=""></a>
+      </div>
+      <div class="contact-info address">
+        <p>5990 S Camelback Ave, Chicago, Il 60865</p>
+        <p>(312) 602 8972</p>
+      </div>
     </div>
-    <div class="contact-info">
-      <p>Our Time:</p>
-      <p>Monday through Friday from 8am to 3pm Cst</p>
-    </div>
-    <div class="social-media">
-      <a href=""><img src="" alt=""></a>
-      <a href=""><img src="" alt=""></a>
-      <a href=""><img src="" alt=""></a>
-    </div>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2974.895171803835!2d-87.62096409198244!3d41.78747278321556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1681677209163!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </footer>
 </body>
 <script src="./index.js"></script>
