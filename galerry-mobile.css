@@ -178,10 +178,16 @@ header{
   width: 15px; height: 15px;
 }
 .btn-prev {
-  position: fixed; left: 0; top: 325px;
+  position: absolute; left: 5px; top: 100px;
 }
 .btn-next {
-  position: fixed; right: 0; top: 325px;
+  position: absolute; right: 5px; top: 100px;
+}
+.btn-prev:active{
+background-color: #7a00df;
+}
+.btn-next:active{
+  background-color: #7a00df;
 }
 .gallery-pics{
   display: flex;

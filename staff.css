@@ -114,7 +114,7 @@ header{
   flex-direction: column;
   display: none;
   z-index: 10;
-  bottom: 70px;
+  bottom: 100px;
 }
 .picture-staff{
   width: 80%;

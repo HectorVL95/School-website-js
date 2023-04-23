@@ -7,12 +7,12 @@ document.querySelector('.menu-button').addEventListener('click', () => {
 /*looping images*/
 const images = ["./assets/kids-coding-teacher.jpg", "./assets/Teach-Your-Kids-Code-Front.webp", "./assets/robot-kid.jpg"]
 const goodCitizens = document.querySelector('.good-citizens')
-const carousel = document.querySelector('carousel')
+const carousel = document.querySelector('.carousel')
 const interval = setInterval(startCarousel, 2000)
 index = 1;
 function startCarousel(){
   goodCitizens.style.backgroundImage =
-  `url(${images[index++]})`
+  `url(${images[index++]})`;
   goodCitizens.classList.remove('carousel')
   void goodCitizens.offsetWidth;
   goodCitizens.classList.add('carousel')
@@ -70,4 +70,5 @@ for(let i = 0; i < mainSections.length; i++){
       overText[i].style.display = 'block'
     }
   })
+  
 }
