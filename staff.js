@@ -6,17 +6,29 @@ document.querySelector('.menu-button').addEventListener('click', () => {
 /* Toggle Darken and Big staff description upon clicking a staff Pic*/
 
 const staffPic = document.querySelectorAll('.staff-pic')
+const staffDescription=document.querySelector('.staff-description')
+const darken = document.querySelector('.darken')
+const closePic = document.querySelector('.close-staffpic')
+
 for(let i = 0; i < staffPic.length; i++){
   staffPic[i].addEventListener('click', () =>{
-    const staffDescription=document.querySelector('.staff-description')
     if(staffPic[i]){
       staffDescription.style.display='flex'
+      darken.style.display='block'
     }
   })
 
 }
-/*staffPic.addEventListener('click', showStaffDescription)
-function showStaffDescription(){
-  const staffDescription=document.querySelector('.staff-description')
-  staffDescription.style.display='block'
-}*/
+
+/*Closing staff description pic upon clicking cancel button or darken*/
+
+
+[closePic, darken].map(function(element){ 
+  element.addEventListener('click', ()=>{
+    staffDescription.style.display='none'
+    darken.style.display='none'
+  }
+  )
+  
+});
+

@@ -77,6 +77,18 @@ header{
 }
 
 /*Main*/
+.darken{
+  width: 100%;
+  height: calc(100%);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 9;
+  display: none;
+  background-color: rgb(169, 169, 169, 0.2);
+}
 .staff{
   display: flex;
   flex-direction: column;
@@ -95,21 +107,28 @@ header{
   border: 4px black solid;
   border: 25px;
   align-self: center;
-  position: absolute;
+  position: fixed;
   background-color: #a6a8aa;
   padding: 10px;
   justify-content: center;
   flex-direction: column;
   display: none;
+  z-index: 10;
+  bottom: 70px;
 }
 .picture-staff{
   width: 80%;
   align-self: center;
+  z-index: 10;
 }
 .close-staffpic{
   position: absolute;
   width: 15px;
-  bottom: 25px;
+  bottom: 390px;
+}
+.close-staffpic:hover{
+  cursor: pointer;
+  background-color: #074377;
 }
 .staff-description div{
   margin-top: 15px;
@@ -143,8 +162,9 @@ header{
   height: auto;
   align-self: center;
 }
-.staff-member img{
+.staff-member img:hover{
   cursor: pointer;
+  border: #011F3A 4px solid;
 }
 .name{
   text-align: center;

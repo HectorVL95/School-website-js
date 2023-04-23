@@ -138,17 +138,24 @@ header{
   left: 0px;
   z-index: 10;
   display: none;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
-.color-over p{
+.over-text{
   align-self: center;
   color: white;
   text-align: center;
-  line-height: 380px;
   font-weight: 600;
   font-size: 2.5rem;
+}
+.afterclick-text{
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+  display: none;
+  width: fit-content;
+  height: fit-content;
 }
 .mains-text{
   position: relative;

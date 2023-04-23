@@ -23,19 +23,51 @@ function startCarousel(){
 const mainSections = document.querySelectorAll('.main-sections')
 const colorOver = document.querySelectorAll('.color-over')
 const mainsText = document.querySelectorAll('.mains-text')
+const overText = document.querySelectorAll('.over-text')
+const clickText = document.querySelectorAll('.afterclick-text')
+
 for(let i = 0; i < mainSections.length; i++){
   mainSections[i].addEventListener('mouseover', () =>{
     if(mainSections[i]){
-      colorOver[i].style.display = 'block'
+      colorOver[i].style.display = 'flex'
       mainsText[i].style.color = 'white'
     }
   })
+  mainSections[i].addEventListener('click',()=>{
+    if(mainSections[i]){
+      overText[i].style.display = 'none'
+      clickText[i].style.display = 'block'
+    }
+  })
+
+  for(let i = 0; i < overText.length; i++){
+    overText[i].addEventListener('click', ()=>{
+      if(overText[i]){
+        overText[i].style.display = 'none'
+        clickText[i].style.display = 'block'
+      }
+    })
+  }
+  for(let i= 0; i< clickText.length; i++){
+    clickText[i].addEventListener('mouseover',()=>{
+      if(clickText[i]){
+        overText[i].style.display = 'none'
+        clickText[i].style.display = 'block'
+      }
+    })
+    clickText[i].addEventListener('mouseout', ()=>{
+      if(clickText[i]){
+        overText[i].style.display = 'none'
+        clickText[i].style.display = 'block'
+      }
+    })
+  }
   mainSections[i].addEventListener('mouseout', () =>{
     if(mainSections[i]){
       colorOver[i].style.display = 'none'
       mainsText[i].style.color = '#a6a8aa'
+      clickText[i].style.display = 'none'
+      overText[i].style.display = 'block'
     }
   })
-};
-
-/* Change text color of text in main section */
+}
